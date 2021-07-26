@@ -1,12 +1,12 @@
-#keygenme-py (30 Points)
+# keygenme-py
 
-##Description
+## Description
 None
 
-##Hints
+## Hints
 None
 
-##Solution
+## Solution
 Checking the code, the key can be recived step by step:
 At first `hashlib.sha256(username_trial).hexdigest()` is needed.
 This can easily done with python and the result reads:
