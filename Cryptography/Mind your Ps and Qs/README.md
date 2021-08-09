@@ -4,7 +4,7 @@
 In RSA, a small e value can be problematic, but what about N? Can you decrypt this? values.
 
 ## Hints
-Bits are expensive, I used only a little bit over 100 to save money
+- Bits are expensive, I used only a little bit over 100 to save money
 
 ## Solution
 Since we know `n = p * q` and n is considered small we simply try to get the prime numbers p and q.
