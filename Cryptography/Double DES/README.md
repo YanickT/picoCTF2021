@@ -9,6 +9,15 @@ I wanted an encryption service that's more secure than regular DES, but not as s
 Connecting to the server we get:
 ```
 Here is the flag:
-18abec0ee8f7aad1c9144485da0a1c1ce3e7a3a989697c2830ec9fcd5592948384b57c397d9aaf51
+7cc5b18a36a7969fde9e22768279b843e62b1d7abe17aadaf0808c7c71808ba812a73554ba95558c
 What data would you like to encrypt?
 ```
+A suitable attack is described at https://en.wikipedia.org/wiki/Meet-in-the-middle_attack.
+We therefore need a pair of cipher- and plaintext.
+Since the server asks we encrypt `12345678` and get `40c4128676bd800b`.
+
+Now we use `main.py` to crack the chiper.
+And get the flag:
+
+
+```45d6631b0c4d52b801a0fa7f6d3bda3c```
