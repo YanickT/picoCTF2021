@@ -51,6 +51,12 @@ b  e  9  8
 ```
 These are allowed an `cj` may be the first two letter of the key. (They actually are :)).
 
+I have to admit that I first also wanted to test the odd pairs in the check function.
+But the algorithms was already sufficient fast enough. Therefore, I simply stored the keys and 
+checked it in the end. 
+I did not refactor the whole code for this new way and thus it is doing a lot of useless checkings but 
+as I said, is fast enough.
+
 This is done in the `main.py`. The flag reads:
 
 ```picoCTF{b7bf6c4d2e3c7715489723f360f8d128}```
