@@ -23,3 +23,8 @@ G17: xy plane
 G21: using mm
 G90: Absolut positioning
 ```
+We than write a simple script `main.py` which interprets this code (only G0 and G1 necessary).
+This reveals the flag:
+
+
+!["image of the flag"](images/flag.png)
