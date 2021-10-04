@@ -22,8 +22,8 @@ def check(key):
     # check here all possible double numbers :).
     # Start with the even ones
     for j in range(0, len(key) - 1, 2):
-        # checking all of them is actually not very ineffective since we are only interested in the pairs.
-        # And checked the before already. But we are sufficient fast so...
+        # checking all of them is actually very ineffective since we are only interested in the pairs.
+        # And checked the pairs before already and check them every run once more. But we are sufficient fast so...
         to_encrypt = [CIPHER[i:i + 2] for i in range(j, len(CIPHER), KEYLENGTH * (KEYLENGTH % 2 + 1))]
         deshifted = [[deshift(l, key[k + j]) for k, l in enumerate(pair)] for pair in to_encrypt]
         decrypted = [b16_decode(pair) for pair in deshifted]
